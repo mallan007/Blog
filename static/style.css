@@ -30,3 +30,7 @@ hr {
     color: slategray;
     font-style: italic;
 }
+.no-posts {
+    font-style: italic;
+    color: gray;
+}

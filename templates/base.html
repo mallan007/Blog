@@ -1,17 +1,16 @@
 <html>
     <head>
-        <title> {% block title %}{% endblock %} - Meu Blog da Vergonha</title>
-        <link rel="stylesheet" href="/static/style.css">
+        <title> {% block title %}{% endblock %} - Meu Blog </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
     </head>
 
     <body>
-        <h1> Meu Blog da Vergonha</h1>   
+        <h1> Meu Blog </h1>
         <nav>
-        
-        </nav> 
+        </nav>
         <section class="content">
-            {% block content %} <!-- Conteúdo de "index.html" -->
+            {% block content %}
             {% endblock %}
         </section>
     </body>
-</html>  
+</html>
